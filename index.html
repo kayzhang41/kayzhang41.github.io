@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Заяц VPN</title>
+
+  <style>
+    :root{
+      --bg1:#0b1220;
+      --bg2:#070b14;
+      --card:#0f172ad9;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --accent:#38bdf8;
+      --accent2:#60a5fa;
+      --shadow: 0 30px 80px rgba(0,0,0,.55);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 50% 20%, rgba(56,189,248,.18), transparent 60%),
+        linear-gradient(180deg, var(--bg1), var(--bg2));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: 28px 16px;
+    }
+    .card{
+      width:min(520px,100%);
+      background: linear-gradient(180deg, rgba(15,23,42,.92), rgba(15,23,42,.76));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 26px 22px 22px;
+      text-align:center;
+    }
+    .logo{
+      width:64px;
+      height:64px;
+      margin:0 auto;
+      border-radius:50%;
+      overflow:hidden;
+      box-shadow: 0 0 0 8px rgba(56,189,248,.08);
+    }
+    .logo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+    .title{
+      margin-top:14px;
+      font-size:30px;
+      font-weight:800;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+    }
+    .check{
+      width:20px;
+      height:20px;
+      border-radius:50%;
+      background: rgba(56,189,248,.2);
+      display:grid;
+      place-items:center;
+    }
+    .check svg{
+      width:13px;
+      height:13px;
+      fill:var(--accent);
+    }
+    .badges{
+      display:flex;
+      gap:8px;
+      justify-content:center;
+      margin-top:8px;
+      flex-wrap:wrap;
+    }
+    .badge{
+      font-size:12px;
+      padding:5px 10px;
+      border-radius:999px;
+      background: rgba(2,6,23,.45);
+      color:#cbd5e1;
+    }
+    .desc{
+      margin:14px auto 0;
+      max-width:420px;
+      font-size:14px;
+      color:var(--muted);
+      line-height:1.55;
+    }
+
+    /* МАЛЕНЬКИЕ ПОДПИСЧИКИ */
+    .stats{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:6px;
+      margin-top:10px;
+      font-size:12px;
+      color: rgba(148,163,184,.8);
+    }
+    .stats svg{
+      width:14px;
+      height:14px;
+      fill: rgba(96,165,250,.9);
+    }
+
+    .btn{
+      margin-top:18px;
+      display:block;
+      width:100%;
+      padding:14px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:700;
+      color:#071827;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      box-shadow: 0 14px 35px rgba(56,189,248,.22);
+    }
+    .footer{
+      margin-top:14px;
+      font-size:12px;
+      color: rgba(148,163,184,.6);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <!-- ЛОГО -->
+    <div class="logo">
+      <img src="https://imgur.com/a/Pr6kKH5" alt="Заяц VPN">
+    </div>
+
+    <!-- НАЗВАНИЕ -->
+    <div class="title">
+      Заяц VPN
+      <span class="check">
+        <svg viewBox="0 0 24 24">
+          <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/>
+        </svg>
+      </span>
+    </div>
+
+    <!-- ТЕГИ -->
+    <div class="badges">
+      <span class="badge">Заяц VPN</span>
+      <span class="badge">Для Android и IOS</span>
+    </div>
+
+    <!-- ОПИСАНИЕ -->
+    <div class="desc">
+      Лучший сервис VPN: без рекламы, без водяных знаков. Стабильное соединение!
+    </div>
+
+    <!-- ПОДПИСЧИКИ (МАЛЕНЬКИЕ) -->
+    <div class="stats">
+      <svg viewBox="0 0 24 24">
+        <path d="M16 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13z"/>
+      </svg>
+      <span>11&nbsp;223 подписчика</span>
+    </div>
+
+    <!-- КНОПКА -->
+    <a class="btn" href="https://t.me/harevlessbot?start=martin" target="_blank">
+      Перейти в Telegram
+    </a>
+
+    <div class="footer">© 2026 • Заяц VPN</div>
+
+  </div>
+
+</body>
+</html>
